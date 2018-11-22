@@ -1,0 +1,218 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[left=0.5cm,right=0.5cm,vmargin=0.4cm,footnotesep=0.3cm]{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\setlength\parindent{0pt}
+\everymath{\displaystyle}
+
+\begin{document}
+
+\scalebox{0.7}{$
+    \int\frac{1}{1+x^2} dx = \arctan x \qquad
+    \int\frac{1}{1-x^2} dx = \frac{1}{2}\log{\left\lvert \frac{1+x}{1-x}\right\rvert} \qquad
+    \int\frac{1}{\sqrt{1-x^2}} dx = \arcsin x \qquad
+    \int\frac{1}{\sqrt{x^2\pm a^2}} dx = \log{\left\lvert x+\sqrt{x^2\pm a^2} \right\rvert} \qquad
+$}\\
+
+\hrulefill\\
+
+\scalebox{0.7}{$
+    \lim_{x\to0} \frac{{\left( 1+x \right)}^a-1}{x} = a \qquad
+    \lim_{x\to0} \frac{\sin ax}{bx} = \frac{a}{b} \qquad
+    \lim_{x\to0} \frac{1-\cos x}{x} = 0 \qquad
+    \lim_{x\to0} \frac{1-\cos x}{x^2} = \frac{1}{2} \qquad
+    \lim_{x\to0} \frac{\tan x}{x} =
+    \lim_{x\to0} \frac{\arcsin x}{x} = 
+    \lim_{x\to0} \frac{\arctan x}{x} = 1 \qquad
+    \lim_{x\to\infty} {\left(1+\frac{a}{x}\right)}^{bx} = e^{ab} \qquad
+    \lim_{x\to\infty} {\left(\frac{x}{x+1}\right)}^x = \frac{1}{e} \qquad
+$}\\
+
+\scalebox{0.7}{$
+    \lim_{x\to0} {(1+ax)}^{\frac{1}{x}} = e^a \qquad
+    \lim_{x\to0} \frac{\log_a(1+x)}{x} = \frac{1}{\log a} \qquad
+    \lim_{x\to0} \frac{a^x-1}{x} = \log a
+$}\\
+
+\hrulefill\\
+
+\scalebox{0.7}{$
+    e^x = \sum_{n\geq0} \frac{x^n}{n!} \quad  \forall x \in\mathbb{R} \qquad
+    \log(1+x) = \sum_{n\geq1} \frac{{(-1)}^{n-1}}{n} x^n \quad \text{for }|x| < 1 \qquad
+    \frac{x^m}{1-x} = \sum_{n\geq m} x^n \quad \text{for }|x| < 1 \qquad
+    {(1+x)}^{\alpha} = \sum_{n\geq0} \binom{n}{\alpha} x^n \quad 
+    \binom{n}{\alpha} = \frac{n!}{\alpha!(n-\alpha)!} , |x| < 1, \alpha \in\mathbb{C} \qquad
+$}\\
+
+\scalebox{0.7}{$
+    \sqrt{1+x} = 1 + \frac{1}{2} x - \frac{1}{8} x^2 + \frac{1}{16} x^3 - \frac{5}{128} x^4 + o(x^5) \qquad
+    \sqrt[3]{1+x} = 1 + \frac{1}{3} x - \frac{1}{9} x^2 + \frac{5}{81} x^3 - \frac{10}{243} x^4 + o(x^5) \qquad
+    \sin x  = \sum_{n\geq0} \frac{{(-1)}^{n}}{(2n+1)!} x^{2n+1} \quad  \forall x \in\mathbb{R} \qquad
+    \cos x  = \sum_{n\geq0} \frac{{(-1)}^{n}}{(2n)!} x^{2n} \quad  \forall x \in\mathbb{R} \qquad
+$}\\
+
+\scalebox{0.7}{$
+    \arcsin x  = \sum_{n\geq0} \frac{(2n)!}{4^n{(n!)}^2(2n+1)} x^{2n+1} \quad  \text{for }|x| < 1 \qquad
+    \arctan x = \sum_{n\geq0} \frac{{(-1)}^n}{2n+1} x^{2n+1} \quad \text{for }|x| < 1 \qquad
+    \sinh x = \sum_{n\geq0} \frac{1}{(2n+1)!} x^{2n+1} \quad \forall x \in\mathbb{R} \qquad
+    \cosh x = \sum_{n\geq0} \frac{1}{(2n)!} x^{2n} \quad \forall x \in\mathbb{R} \qquad
+$}\\
+
+\hrulefill\\
+
+\scalebox{0.7}{%
+    Calcolo potenzale (Integrazione lungo poligonali)
+    $U(x,y,z) = \int_{x_0}^{x}F_1(t,y_0,z_0)dt + 
+                \int_{y_0}^{y}F_2(x,t,z_0)dt + 
+                \int_{z_0}^{z}F_3(x,y,t)dt
+$}\\
+
+\scalebox{0.7}{%
+    Formula Gauss-Green: $D$ dominio regolare del piano, $\bar{F}(x,y)=(P(x,y),Q(x,y)) \qquad
+    \int_{\partial+D} \bar{F} \cdot \bar{d}s = \iint_{D} (Q_x - P_y) dx dy \qquad
+    \int_{\partial+D} P dx + Q dy = \iint_{D} (Q_x - P_y) dx dy
+$}\\
+
+\scalebox{0.7}{%
+    Calcolo delle aree con Gauss-Green: se $Q_x(x,y)-P_y(x,y)=1 \qquad
+    \int_{\partial+D} Pdx+Qdy = \iint_{D} 1 dx dy = Area(D) =
+    \int_{\partial+D} -y dx = \int_{\partial+D} x dy =
+    \frac{1}{2}\int_{\partial+D} (-y dx + x dy)
+$}\\
+
+\scalebox{0.7}{%
+    Superfice: semplice se per $(u,v)$ e $(u',v') \in D \quad
+    \bar{r}(u,v)=\bar{r}(u',v') \Rightarrow (u,v)=(u',v') \qquad
+    $regolare se$ \quad \bar{r}_u(u,v) \times \bar{r}_v(u,v) = \bar{0}
+$}\\
+
+\scalebox{0.7}{%
+    Teorema di Stokes: $\bar{F}=(F_1,F_2,F_3)$,
+    $S = \bar{r}: D$ (domino regolare del piano) $ \rightarrow \mathbb{R}^3 \qquad
+    \int_{S} \bar{\nabla} \times \bar{F} \cdot \bar{n}\, dS =
+    \int_{\bar{r}(\partial+D)} \bar{F} \cdot \bar{d}s
+$}\\
+
+\scalebox{0.7}{%
+    Teorema della divergenza: $\bar{F}=(F_1,F_2,F_3): A$
+    (aperto) $\subset \mathbb{R}^3 \rightarrow \mathbb{R}^3$. $C \subset A \qquad
+    \iint_{\partial D}\bar{F} \cdot \bar{n}_e \, dS =
+    \iiint_{C} \bar{\nabla} \cdot \bar{F} dx dy dz
+$}\\
+
+\hrulefill\\
+
+\scalebox{0.7}{$
+    (+) \, (x_1,\,y_1) + (x_2,\,y_2) = (x_1+x_2,\,y_1+y_2) \qquad
+    (\cdot) \, (x_1,\,y_1) \cdot (x_2,\,y_2) = (x_1x_2-y_1y_2,\,x_1y_2+x_2y_1) \qquad
+    z = a+ib = \rho(\cos \theta + i \sin \theta) = \rho e^{i\theta} \qquad
+    \left| Re(z)\right| , \left|Im(z)\right| \leq |z| \leq \left|Re(z)\right| + \left| Im(z)\right|
+$}\\
+
+\scalebox{0.7}{$
+    \left| z^k \right| = \left| z \right| ^k \qquad
+    \left| \frac{z}{w} \right| = \frac{|z|}{|w|} \qquad
+    \left| z \cdot w \right| = |z||w|
+$}\\
+
+\hrulefill\\
+
+\scalebox{0.7}{%
+    Serie telescopica:$ \qquad
+    \sum_{n \geq1} \frac{1}{n(n+1)} = \lim_{N\to\infty} 1 - \frac{1}{N+1} = 1 \qquad
+    \sum_{n \geq1} \log \left( 1 + \frac{1}{n} \right) = \lim_{N\to\infty} \log(N+1) - \log(1) = +\infty \qquad
+    \alpha_0 + \sum_{n \geq1} (\alpha_n - \alpha_{n-1})
+$}\\
+
+\scalebox{0.7}{%
+    Serie geometrica:$ \qquad
+    \sum_{n\geq0} q^n \qquad 
+    i) \, |q| < 1 $ converge con somma $ \frac{1}{1-q} \qquad
+    ii) \, |q| > 1 \lor q = 1 $ diverge $ \qquad
+    iii) \, |q| = 1 \wedge q \neq 1 $ indeterminata $
+$}\\
+
+\scalebox{0.7}{%
+    Serie armonica generalizzata: $ \qquad
+    \sum_{n\geq1} n^{-\alpha} \quad \alpha\in\mathbb{R} \qquad 
+    i) \, \alpha > 1 $ converge $ \qquad
+    ii) \, \alpha \leq 1 $ diverge $
+$}\\
+
+\scalebox{0.7}{%
+    Serie di Leibniz$\qquad
+    \sum_{n\geq0} {(-1)}^n b_n \quad : 
+    \quad b_n > 0 \quad \wedge \quad b_{n+1} < b_n \quad \wedge \quad b_n \rightarrow 0 \, (n\to \infty) 
+    \Rightarrow $ la serie converge semplicemente e inoltre$ \quad
+    \left| \sum_{n\geq0} {(-1)}^n b_n - \sum_{n=0}^{N} {(-1)}^n b_n \right| \leq b_{N+1}
+$}\\
+
+\scalebox{0.7}{%
+    Condizione necessaria (ma non sufficiente) affinchè $\sum_{n\geq0} a_n$ converga:
+    $ \qquad \lim_{n\to\infty} a_n = 0
+$}\\
+
+\scalebox{0.7}{%
+    - Criterio del confronto$ \quad S_1 = \sum_{n\geq0} a_n \,\wedge\, S_2 = \sum_{n\geq0} b_n
+    \,:\, \forall n \geq n_0 0 \leq a_n \leq b_n \Rightarrow \qquad
+    i)\,S_1$ divergente $\Rightarrow S_2$ divergente $ \qquad
+    ii)\,S_2$ convergente $\Rightarrow S_1$ convergente
+}\\
+
+\scalebox{0.7}{%
+    - Criterio del confronto asintotico$ \quad \sum_{n\geq0} a_n \,\wedge\, 
+    \sum_{n\geq0} b_n \, : \, a_n , b_n > 0 \Rightarrow \qquad
+    i)\,\lim_{n\to\infty} \frac{a_n}{b_n} \in \mathbb{R} \,\wedge\, \sum_{n\geq0} b_n \, conv. 
+      \, \Rightarrow \, \sum_{n\geq0} a_n \, conv. \qquad
+    ii)\,\lim_{n\to\infty} \frac{a_n}{b_n} \in \bar{\mathbb{R}}_{\neq0} \,\wedge\, \sum_{n\geq0} b_n \, div. 
+      \, \Rightarrow \, \sum_{n\geq0} a_n \, div. \qquad
+$}\\
+
+\scalebox{0.7}{%
+    (corollario) $ \quad
+    iii) \lim_{n\to\infty} \frac{a_n}{b_n} \in \mathbb{R}_{\neq0} \, 
+    \Rightarrow \, \sum_{n\geq0} a_n \,\wedge\, \sum_{n\geq0} b_n \,$ hanno lo stesso carattere
+}\\
+
+\scalebox{0.7}{%
+    - Criterio del rapporto (corollario)$ \quad
+    \left\{a_n\right\}_{n\in\mathbb{N}} \subset\mathbb{R} \,:\, \forall{n}a_n > 0 \,
+    \wedge\, l = \lim_{n\to\infty} \frac{a_{n+1}}{a_n} \, \Rightarrow\qquad
+    i)\, l > 1 \Rightarrow\sum_{n\geq0} a_n \, div. \qquad
+    ii)\, l < 1 \Rightarrow\sum_{n\geq0} a_n \, conv. \qquad
+    iii)\, l = 1 \,$ non posso dire nulla
+}\\
+
+\scalebox{0.7}{%
+    - Criterio della radice (corollario)$ \quad
+    {\left\{a_n\right\}}_{n\in\mathbb{N}} \subset \mathbb{R} \,:\, \forall n a_n > 0 \,
+    \wedge\, l = \lim_{n\to\infty} \sqrt{a_n} \, \Rightarrow \qquad
+    i)\, l > 1 \Rightarrow\sum_{n\geq0} a_n \, div. \qquad
+    ii)\, l < 1 \Rightarrow\sum_{n\geq0} a_n \, conv. \qquad
+    iii)\, l = 1 \,$ non posso dire nulla
+}\\
+
+\scalebox{0.7}{%
+    - Criterio di Maclaurin$ \quad
+    \forall{n} \,\, a_n = f (n) \,\wedge\, f\,$non è crescente$ \, \Rightarrow\qquad
+    \sum_{n\geq0} a_n \, $e$ \, \int_{1}^{+\infty} f (x) dx \,$ hanno lo stesso carattere e inoltre $\,
+    \sum_{n\geq2} a_n \leq\int_{1}^{+\infty} f (x) dx \leq\sum_{n\geq1} a_n
+$}\\
+
+\scalebox{0.7}{%
+    Somma tra serie e prodotto per uno scalare$ \quad
+    S = \sum_{n\geq0} a_n \, $ e $ \, T = \sum_{n\geq0} b_n \, $ entrambe convergenti $\,\Rightarrow\qquad
+    i) \, \forall{\lambda} \in\mathbb{C} \quad \lambda S = \sum_{n\geq0} (\lambda a_n) \qquad  
+    ii) \, S + T = \sum_{n\geq0} (a_n + b_n)
+$}\\
+
+\scalebox{0.7}{%
+    Prodotto tra serie (secondo Cauchy)$ \quad
+    S = \sum_{n\geq0} a_n \, $ e $ \, T = \sum_{n\geq0} b_n \quad c_n:= \sum_{k\geq0} a_k{b}_{n-k}\Rightarrow\qquad
+    S \cdot T = \sum_{n\geq0}c_n 
+$}\\
+
+\end{document}
+
