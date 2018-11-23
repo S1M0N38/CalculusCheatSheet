@@ -33,7 +33,9 @@ $}\\
 \scalebox{0.7}{$
     \lim_{x\to0} {(1+ax)}^{\frac{1}{x}} = e^a \qquad
     \lim_{x\to0} \frac{\log_a(1+x)}{x} = \frac{1}{\log a} \qquad
-    \lim_{x\to0} \frac{a^x-1}{x} = \log a
+    \lim_{x\to0} \frac{a^x-1}{x} = \log a \qquad
+    \lim_{n\to+\infty} \frac{\sqrt{2\pi{n}}{\left(\frac{n}{e}\right)}^n}{n!}=1 \,\,
+    \Rightarrow\,e{\left(\frac{n}{e}\right)}^n\leq{n!}\leq{en}{\left(\frac{n}{e}\right)}^n \qquad
 $}\\
 
 \hrulefill\\
@@ -129,16 +131,16 @@ $}\\
 \scalebox{0.7}{%
     Serie geometrica:$ \qquad
     \sum_{n\geq0} q^n \qquad 
-    i) \, |q| < 1 $ converge con somma $ \frac{1}{1-q} \qquad
-    ii) \, |q| > 1 \lor q = 1 $ diverge $ \qquad
-    iii) \, |q| = 1 \wedge q \neq 1 $ indeterminata $
+    (i) \, |q| < 1 $ converge con somma $ \frac{1}{1-q} \qquad
+    (ii) \, |q| > 1 \lor q = 1 $ diverge $ \qquad
+    (iii) \, |q| = 1 \wedge q \neq 1 $ indeterminata $
 $}\\
 
 \scalebox{0.7}{%
     Serie armonica generalizzata: $ \qquad
     \sum_{n\geq1} n^{-\alpha} \quad \alpha\in\mathbb{R} \qquad 
-    i) \, \alpha > 1 $ converge $ \qquad
-    ii) \, \alpha \leq 1 $ diverge $
+    (i) \, \alpha > 1 $ converge $ \qquad
+    (ii) \, \alpha \leq 1 $ diverge $
 $}\\
 
 \scalebox{0.7}{%
@@ -157,22 +159,22 @@ $}\\
 \scalebox{0.7}{%
     - Criterio del confronto$ \quad S_1 = \sum_{n\geq0} a_n \,\wedge\, S_2 = \sum_{n\geq0} b_n
     \,:\, \forall n \geq n_0 0 \leq a_n \leq b_n \Rightarrow \qquad
-    i)\,S_1$ divergente $\Rightarrow S_2$ divergente $ \qquad
-    ii)\,S_2$ convergente $\Rightarrow S_1$ convergente
+    (i)\,S_1$ divergente $\Rightarrow S_2$ divergente $ \qquad
+    (ii)\,S_2$ convergente $\Rightarrow S_1$ convergente
 }\\
 
 \scalebox{0.7}{%
     - Criterio del confronto asintotico$ \quad \sum_{n\geq0} a_n \,\wedge\, 
     \sum_{n\geq0} b_n \, : \, a_n , b_n > 0 \Rightarrow \qquad
-    i)\,\lim_{n\to\infty} \frac{a_n}{b_n} \in \mathbb{R} \,\wedge\, \sum_{n\geq0} b_n \, conv. 
+    (i)\,\lim_{n\to\infty} \frac{a_n}{b_n} \in \mathbb{R} \,\wedge\, \sum_{n\geq0} b_n \, conv. 
       \, \Rightarrow \, \sum_{n\geq0} a_n \, conv. \qquad
-    ii)\,\lim_{n\to\infty} \frac{a_n}{b_n} \in \bar{\mathbb{R}}_{\neq0} \,\wedge\, \sum_{n\geq0} b_n \, div. 
+    (ii)\,\lim_{n\to\infty} \frac{a_n}{b_n} \in \bar{\mathbb{R}}_{\neq0} \,\wedge\, \sum_{n\geq0} b_n \, div. 
       \, \Rightarrow \, \sum_{n\geq0} a_n \, div. \qquad
 $}\\
 
 \scalebox{0.7}{%
     (corollario) $ \quad
-    iii) \lim_{n\to\infty} \frac{a_n}{b_n} \in \mathbb{R}_{\neq0} \, 
+    (iii) \lim_{n\to\infty} \frac{a_n}{b_n} \in \mathbb{R}_{\neq0} \, 
     \Rightarrow \, \sum_{n\geq0} a_n \,\wedge\, \sum_{n\geq0} b_n \,$ hanno lo stesso carattere
 }\\
 
@@ -180,18 +182,18 @@ $}\\
     - Criterio del rapporto (corollario)$ \quad
     \left\{a_n\right\}_{n\in\mathbb{N}} \subset\mathbb{R} \,:\, \forall{n}a_n > 0 \,
     \wedge\, l = \lim_{n\to\infty} \frac{a_{n+1}}{a_n} \, \Rightarrow\qquad
-    i)\, l > 1 \Rightarrow\sum_{n\geq0} a_n \, div. \qquad
-    ii)\, l < 1 \Rightarrow\sum_{n\geq0} a_n \, conv. \qquad
-    iii)\, l = 1 \,$ non posso dire nulla
+    (i)\, l > 1 \Rightarrow\sum_{n\geq0} a_n \, div. \qquad
+    (ii)\, l < 1 \Rightarrow\sum_{n\geq0} a_n \, conv. \qquad
+    (iii)\, l = 1 \,$ non posso dire nulla
 }\\
 
 \scalebox{0.7}{%
     - Criterio della radice (corollario)$ \quad
     {\left\{a_n\right\}}_{n\in\mathbb{N}} \subset \mathbb{R} \,:\, \forall n a_n > 0 \,
     \wedge\, l = \lim_{n\to\infty} \sqrt{a_n} \, \Rightarrow \qquad
-    i)\, l > 1 \Rightarrow\sum_{n\geq0} a_n \, div. \qquad
-    ii)\, l < 1 \Rightarrow\sum_{n\geq0} a_n \, conv. \qquad
-    iii)\, l = 1 \,$ non posso dire nulla
+    (i)\, l > 1 \Rightarrow\sum_{n\geq0} a_n \, div. \qquad
+    (ii)\, l < 1 \Rightarrow\sum_{n\geq0} a_n \, conv. \qquad
+    (iii)\, l = 1 \,$ non posso dire nulla
 }\\
 
 \scalebox{0.7}{%
@@ -204,8 +206,8 @@ $}\\
 \scalebox{0.7}{%
     Somma tra serie e prodotto per uno scalare$ \quad
     S = \sum_{n\geq0} a_n \, $ e $ \, T = \sum_{n\geq0} b_n \, $ entrambe convergenti $\,\Rightarrow\qquad
-    i) \, \forall{\lambda} \in\mathbb{C} \quad \lambda S = \sum_{n\geq0} (\lambda a_n) \qquad  
-    ii) \, S + T = \sum_{n\geq0} (a_n + b_n)
+    (i) \, \forall{\lambda} \in\mathbb{C} \quad \lambda{S} = \sum_{n\geq0} (\lambda{a_n}) \qquad  
+    (ii) \, S + T = \sum_{n\geq0} (a_n + b_n)
 $}\\
 
 \scalebox{0.7}{%
@@ -214,5 +216,108 @@ $}\\
     S \cdot T = \sum_{n\geq0}c_n 
 $}\\
 
+\newpage
+
+\scalebox{0.7}{%
+    Convergenza puntuale (semplice) di 
+    $(f_n)$, a $f: S\in\mathbb{C} \rightarrow\mathbb{C} \quad
+    \lim_{n\to\infty} f_n (z) = f (z), \quad z\in S
+    \qquad \Leftarrow $ convegenza assoluta
+}\\
+
+
+\scalebox{0.7}{%
+    Convergenza uniforme di 
+    $(f_n)$, a $f: S\in\mathbb{C} \rightarrow\mathbb{C} \quad
+    \forall{\epsilon} > 0 \,\, \exists N = N (\epsilon) \in\mathbb{N} \,:\,
+    \left| f_n (z) - f (z) \right| < \epsilon , \,\forall{n} \geq N \quad$ oppure $\quad
+    a_n:= \sup\left| f_n (z) - f (z) \right| \,\Leftrightarrow \, \lim_{n\to\infty} a_n = 0
+    \qquad \Rightarrow $ convergenza puntuale
+}\\
+
+\scalebox{0.7}{%
+    Convergenza totale (normale) di 
+    $\sum_{k\geq0} u_k$, a $u: S\in\mathbb{C} \rightarrow\mathbb{C} \quad
+    $ se $ \,  \exists M_k \geq 0 \,:\, \sum_{k\geq0} M_k \,$ conv e inoltre $ \,
+    \forall{k}\geq0 \quad \sup\left| u_k (z) \right| \leq M_k \qquad
+    \Rightarrow $ convergenza assoluta, convergenza uniforme
+}\\
+
+\scalebox{0.7}{%
+    Continuità della funzione limite $ \qquad
+    (i)\, (f_n)$ conv uniforme a $ f \qquad
+    (ii)\, \forall{(f_n)} \,\, (f_n) $ continua in $ z_0 $ (definitivamente)$\qquad
+    \Rightarrow\,f $ continua in $ z_0 
+$}\\
+
+\scalebox{0.7}{%
+    Passaggio di limite sotto segno di $ \int\qquad
+    (i)\, (f_n)$ conv uniforme a $ f \qquad
+    (ii)\, \forall{(f_n)} \,\, (f_n) $ continua su $ [a,b] $ (definitivamente)$\qquad
+    \Rightarrow\, \lim_{n\to\infty}\int_{x_0}^{x} f_n (t) dt = \int_{x_0}^{x} f (t) dt \quad
+    \forall{x_0,x} \in[a,b]
+$}\\
+
+\scalebox{0.7}{%
+    Passaggio di limite sotto segno di $ \partial\qquad
+    (i)\, \forall{f_n} \,\, f_n \in{C'}\,\,$: $f'_n \to{g_n}$ uniformemente su $ (a,b)\qquad
+    (ii)\, f_n \to{f} $ su $ (a,b) \qquad\Rightarrow\quad
+    (i)\, \lim_{n\to\infty}\partial[f_n] = \partial[\lim_{n\to\infty}f_n] \quad
+    (ii)\, f\in{C' (a,b)}
+$}\\
+
+\scalebox{0.7}{%
+    Teorema della chiusura $\quad \{u_k\} \in{C (\mathbb{C})} \qquad
+    (i)\, \sum_{k\geq1} u_k $ conv tot su $S\in\mathbb{C} \Rightarrow $ conv tot su $\bar{S} \qquad
+    (ii)\, \sum_{k\geq1} u_k $ conv unif su $S\in\mathbb{C} \Rightarrow $ conv unif su $\bar{S}
+$}\\
+
+\hrulefill\\
+
+\scalebox{0.7}{%
+    Raggio di convergenza $ \rho\in[0,+\infty] \qquad
+    A = \{u\in\mathbb{C} \,: \, \sum_{n\geq0} {a}_n{z}^n $ conv in $z=u\} \in\mathbb{C} \qquad
+    \Rightarrow\, \rho:= \sup\{|z|\} \quad z\in A
+$}\\
+
+\scalebox{0.7}{%
+    Teorema del disco di convergenza $ \sum_{n\geq0} {a}_n{z}^n $ centrata in 0 e $\Rightarrow\qquad
+    (i)\, \rho=0\,\Rightarrow$ conv. $\,z=0 \qquad
+    (ii)\, \rho\in(0,+\infty) \,\Rightarrow$ conv ass $z\in{B_{\rho} (0)} \quad\wedge\quad
+    $conv tot $z\in{B_{r} (0)} \,\,0 < r < \rho
+$}\\
+
+\scalebox{0.7}{$
+    (iii)\, \rho=+\infty\,\Rightarrow$ conv ass $\forall{z}\in{\mathbb{C}} \quad\wedge\quad
+    $conv tot $z\in{B_{r} (0)} \,\,0 < r \qquad $
+    il comportamento agli estremi deve essere studiato singolarmente.
+}\\
+
+\scalebox{0.7}{%
+    Calcolo raggio di convergenza $
+    \sum_{n\geq0} {a}_n{z}^n $. Se esiste il limite $\in\bar{\mathbb{R}} \qquad
+    l = \lim_{n\to\infty} \sqrt[n]{|a_n|} = \lim_{n\to\infty} \frac{|a_{n+1}|}{|a_n|}
+    \Rightarrow\quad\rho= \frac{1}{l}
+$}\\
+
+\scalebox{0.7}{%
+    Criterio di Abel $\quad \sum_{n\geq0} a_n {(x-x_0)}^n$ con $\rho$ raggio di conv $\qquad
+    (i)$ conv sempl in $x=x_0+\rho\,\Rightarrow\,$ conv unif in $[x_0,x_0+\rho] \qquad
+    (ii)$ conv sempl in $x=x_0-\rho\,\Rightarrow\,$ conv unif in $[x_0-\rho,x_0]
+$}\\
+
+\hrulefill\\
+
+\scalebox{0.7}{$
+    \cos^2\alpha=\frac{1+\cos(2\alpha)}{2} \qquad
+    \sin^2\alpha=\frac{1-\cos(2\alpha)}{2} \qquad
+    \cos\alpha=\frac{1-t^2}{1+t^2} \quad
+    \sin\alpha=\frac{2t}{1+t^2} \quad
+    \tan\alpha=\frac{2t}{1-t^2} \quad
+    t=\tan\left(\frac{\alpha}{2}\right) \qquad
+$}\\
+
+
 \end{document}
+
 
